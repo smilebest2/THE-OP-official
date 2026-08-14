@@ -64,6 +64,17 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .trackInfo audio { width:100%; margin:3rem 0 1rem; filter:grayscale(1) contrast(1.2); }
 .note { color:#666; font-family:"Yu Mincho",serif; font-size:.85rem; }
 
+.gameTeaser { overflow:hidden; }
+.gameTeaserBody { display:grid; grid-template-columns:.72fr 1.28fr; gap:6vw; align-items:center; padding-top:5rem; }
+.gameTeaserCopy h2 { margin:.25rem 0 2rem; font-family:"Yu Mincho",serif; font-size:clamp(3.4rem,7vw,7.4rem); font-weight:400; line-height:.94; letter-spacing:-.08em; }
+.gameTeaserCopy > p:not(.eyebrow) { max-width:34rem; margin:0 0 2.2rem; font-family:"Yu Mincho",serif; font-size:clamp(.95rem,1.35vw,1.15rem); line-height:2; }
+.gameCta { display:inline-flex; justify-content:space-between; align-items:center; width:min(100%,310px); padding:1.15rem 1.3rem; color:#000; background:#fff; border:1px solid #fff; font-size:.72rem; font-weight:700; letter-spacing:.12em; transition:.25s; }
+.gameCta:hover,.gameCta:focus-visible { color:#fff; background:#050505; }
+.gameVisual { position:relative; aspect-ratio:16/9; overflow:hidden; display:flex; justify-content:space-between; align-items:end; padding:1.2rem; background-image:linear-gradient(90deg,rgba(255,61,0,.18),rgba(0,0,0,.1) 48%,rgba(23,66,211,.18)),url('/game/assets/crowd-battle-v2.webp'); background-size:cover; background-position:center; border:1px solid #555; font:700 .55rem/1 Arial,sans-serif; letter-spacing:.18em; transition:filter .25s,transform .25s; }
+.gameVisual::after { content:'GAME風'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-4deg); padding:.18em .3em; color:#050505; background:#fff; font-family:Arial Black,"Yu Gothic",sans-serif; font-size:clamp(2.3rem,6vw,6.5rem); letter-spacing:-.08em; white-space:nowrap; box-shadow:8px 8px 0 #050505; }
+.gameVisual b { position:absolute; left:50%; bottom:1.2rem; transform:translateX(-50%); }
+.gameVisual:hover { filter:contrast(1.12) saturate(1.2); transform:scale(1.01); }
+
 .manifesto { padding:clamp(6rem,13vw,12rem) 4vw; border-top:2px solid #000; background:#fff; }
 .manifesto p { margin:0; padding:.25em 1vw; font-family:"Yu Mincho",serif; font-size:clamp(2.2rem,6vw,6rem); line-height:1.2; letter-spacing:-.06em; border-bottom:1px solid #000; }
 .manifesto .inverse { margin-top:2rem; padding:.45em 1vw; color:#fff; background:#000; }
@@ -85,11 +96,12 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .hero h1 { font-size:clamp(3.15rem,15vw,5.2rem); }
   .heroLogoWrap { width:48vw; bottom:7vw; }
   .scrollHint { display:none; }
-  .storyBody,.record { grid-template-columns:1fr; }
+  .storyBody,.record,.gameTeaserBody { grid-template-columns:1fr; }
   .storyText h2 { margin-top:2rem; }
   .filmHeading { display:block; }
   .filmHeading p { text-align:left; }
   .record { gap:4rem; }
+  .gameTeaserBody { gap:3.5rem; }
   .recordArt { max-width:520px; }
   footer { align-items:start; flex-direction:column; }
   footer div { text-align:left; }

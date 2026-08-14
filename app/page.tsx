@@ -2,6 +2,7 @@ const navItems = [
   ["01", "STORY", "#story"],
   ["02", "FILM", "#film"],
   ["03", "MUSIC", "#music"],
+  ["04", "GAME風", "#game"],
 ] as const;
 
 export default function Home() {
@@ -113,6 +114,24 @@ export default function Home() {
             </audio>
             <p className="note">iPhoneで録音された、二人の最初の記録。</p>
           </div>
+        </div>
+      </section>
+
+      <section className="gameTeaser section darkSection" id="game" aria-labelledby="game-title">
+        <div className="sectionIndex light">
+          <span>04</span>
+          <p>GAME風 / MUSIC EXPERIENCE</p>
+        </div>
+        <div className="gameTeaserBody">
+          <div className="gameTeaserCopy">
+            <p className="eyebrow">YAMECHIMAE × DONMAI</p>
+            <h2 id="game-title">押して、<br />押し返す。</h2>
+            <p>「やめちまえ」と「どんまい」。<br />楽曲の掛け声に合わせて二つの勢力がぶつかる、THE O.PのGAME風ミュージック体験。</p>
+            <a className="gameCta" href="/game">GAME風を始める <span aria-hidden="true">↗</span></a>
+          </div>
+          <a className="gameVisual" href="/game" aria-label="やめちまえ × どんまい GAME風を開く">
+            <span>RED CROWD</span><b>VS</b><span>BLUE CROWD</span>
+          </a>
         </div>
       </section>
 
