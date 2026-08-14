@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://the-op-official.xotaken47.chatgpt.site"),
   title: "THE O.P | Official Site",
   description: "54歳の夏、難波で結成。THE O.P公式サイト。",
   icons: { icon: "/favicon.svg" },
