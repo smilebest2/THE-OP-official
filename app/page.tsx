@@ -96,7 +96,7 @@ export default function Home() {
       <section className="music section" id="music" aria-labelledby="music-title">
         <div className="sectionIndex">
           <span>03</span>
-          <p>MUSIC / ORIGINAL RECORDING</p>
+          <p>MUSIC / THE O.P RECORDINGS</p>
         </div>
         <div className="record">
           <div className="recordArt" aria-hidden="true">
@@ -113,6 +113,22 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">iPhoneで録音された、二人の最初の記録。</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <div className="newTrackNumber">
+            <span>TRACK 02</span>
+            <b>NEW</b>
+          </div>
+          <div className="newTrackMain">
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>わちゅごなどぅ</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/wachugonadu.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">Aメロ接続版 / 1:16</p>
           </div>
         </div>
       </section>
