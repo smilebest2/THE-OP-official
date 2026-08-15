@@ -124,7 +124,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 02</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">NEW RECORDING</p>
             <h3>わちゅごなどぅ</h3>
@@ -134,6 +134,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">Aメロ接続版 / 1:16</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/question-cover.png"
+            alt="受話器が外れた黒電話とコードを描いた、Questionの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 03</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>Question</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/question.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">クリア・音量調整版 / 1:56</p>
           </div>
         </div>
       </section>
