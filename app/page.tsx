@@ -145,7 +145,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 03</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">NEW RECORDING</p>
             <h3>Question</h3>
@@ -155,6 +155,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">クリア・音量調整版 / 1:56</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/erimo-misaki-cover.png"
+            alt="強風の岬に立つコート姿と荒波を描いた、えりも岬の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 04</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>えりも岬</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/erimo-misaki.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">クリア・音量調整版 / 1:28</p>
           </div>
         </div>
       </section>
