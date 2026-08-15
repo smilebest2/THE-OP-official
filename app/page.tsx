@@ -91,6 +91,20 @@ export default function Home() {
           </video>
           <p><span>THE O.P</span><span>54歳の夏 — OFFICIAL TRAILER</span></p>
         </div>
+        <div className="specialFilmHeading">
+          <div>
+            <p className="eyebrow">SPECIAL FILM / 2026</p>
+            <h3>PSYCHEDELIC<br />TRIP PV</h3>
+          </div>
+          <p>ギターと声が、幾何学と波形に変わる。<br />音に反応して変容する、約1分31秒の映像作品。</p>
+        </div>
+        <div className="videoFrame specialFilmFrame">
+          <video controls playsInline preload="metadata" poster="/psychedelic-trip-pv-poster.webp">
+            <source src="/psychedelic-trip-pv.mp4" type="video/mp4" />
+            お使いのブラウザは動画再生に対応していません。
+          </video>
+          <p><span>THE O.P</span><span>AUDIO-REACTIVE VISUAL / 01:31</span></p>
+        </div>
       </section>
 
       <section className="music section" id="music" aria-labelledby="music-title">

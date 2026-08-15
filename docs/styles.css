@@ -50,6 +50,10 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .videoFrame { border:1px solid #555; padding:clamp(.4rem,1vw,.8rem); }
 .videoFrame video { display:block; width:100%; max-height:78vh; background:#000; }
 .videoFrame > p { display:flex; justify-content:space-between; margin:.8rem .3rem .2rem; font:700 .55rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.specialFilmHeading { display:flex; align-items:end; justify-content:space-between; gap:2rem; margin-top:clamp(6rem,12vw,11rem); padding:0 0 2.5rem; border-bottom:1px solid #555; }
+.specialFilmHeading h3 { margin:0; font-family:Arial Black,Impact,sans-serif; font-size:clamp(3rem,8vw,8rem); line-height:.83; letter-spacing:-.09em; }
+.specialFilmHeading > p { margin:0 0 .4rem; text-align:right; font-family:"Yu Mincho",serif; font-size:clamp(.85rem,1.3vw,1.1rem); line-height:1.9; }
+.specialFilmFrame { margin-top:2.5rem; border-color:#8b24ff; box-shadow:0 0 0 1px rgba(255,0,204,.28),0 0 55px rgba(92,0,255,.22); }
 
 .record { display:grid; grid-template-columns:minmax(280px,1fr) 1.2fr; gap:8vw; align-items:center; padding-top:5rem; }
 .recordArt { aspect-ratio:1; padding:2rem; display:flex; flex-direction:column; justify-content:space-between; color:#fff; background:#000; font-family:Arial,sans-serif; letter-spacing:.15em; }
@@ -104,6 +108,8 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .storyText h2 { margin-top:2rem; }
   .filmHeading { display:block; }
   .filmHeading p { text-align:left; }
+  .specialFilmHeading { display:block; }
+  .specialFilmHeading > p { margin-top:1.8rem; text-align:left; }
   .record { gap:4rem; }
   .newTrackArt { max-width:520px; }
   .gameTeaserBody { gap:3.5rem; }
