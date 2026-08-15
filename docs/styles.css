@@ -61,8 +61,9 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .credits { font:700 .68rem/1 Arial,sans-serif; letter-spacing:.2em; }
 .trackInfo audio { width:100%; margin:3rem 0 1rem; filter:grayscale(1) contrast(1.2); }
 .note { color:#666; font-family:"Yu Mincho",serif; font-size:.85rem; }
-.newTrack { margin-top:5rem; display:grid; grid-template-columns:.35fr 1.65fr; gap:4vw; padding:3rem 0; border-top:2px solid #000; border-bottom:1px solid #000; }
-.newTrackNumber { display:flex; flex-direction:column; justify-content:space-between; font:700 .6rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.newTrack { margin-top:5rem; display:grid; grid-template-columns:minmax(280px,1fr) 1.2fr; gap:8vw; align-items:center; padding:5rem 0 3rem; border-top:2px solid #000; border-bottom:1px solid #000; }
+.newTrackArt { width:100%; aspect-ratio:1; object-fit:cover; background:#000; }
+.newTrackNumber { display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem; font:700 .6rem/1 Arial,sans-serif; letter-spacing:.18em; }
 .newTrackNumber b { width:fit-content; padding:.5rem .65rem; color:#fff; background:#000; }
 .newTrackMain h3 { margin:.2rem 0 1rem; font-family:"Yu Mincho",serif; font-size:clamp(3rem,6vw,6rem); font-weight:400; line-height:1; letter-spacing:-.07em; }
 .newTrackMain audio { width:100%; margin:2.5rem 0 1rem; filter:grayscale(1) contrast(1.2); }
@@ -104,7 +105,7 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .filmHeading { display:block; }
   .filmHeading p { text-align:left; }
   .record { gap:4rem; }
-  .newTrackNumber { flex-direction:row; align-items:center; }
+  .newTrackArt { max-width:520px; }
   .gameTeaserBody { gap:3.5rem; }
   .recordArt { max-width:520px; }
   footer { align-items:start; flex-direction:column; }

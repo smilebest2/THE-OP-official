@@ -116,11 +116,16 @@ export default function Home() {
           </div>
         </div>
         <div className="newTrack">
-          <div className="newTrackNumber">
-            <span>TRACK 02</span>
-            <b>NEW</b>
-          </div>
+          <img
+            className="newTrackArt"
+            src="/wachugonadu-cover.png"
+            alt="海岸線を走るクラシックカーを描いた、わちゅごなどぅの白黒ジャケット"
+          />
           <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 02</span>
+              <b>NEW</b>
+            </div>
             <p className="eyebrow">NEW RECORDING</p>
             <h3>わちゅごなどぅ</h3>
             <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
