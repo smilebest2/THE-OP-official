@@ -180,7 +180,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 04</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">NEW RECORDING</p>
             <h3>えりも岬</h3>
@@ -190,6 +190,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">クリア・音量調整版 / 1:28</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/54-summer-arrange-cover.png"
+            alt="午前7時を表示する古いラジオと二人のシルエットを描いた、54歳の夏 アレンジverの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 05</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">RADIO NEWS ARRANGE</p>
+            <h3>54歳の夏<br />アレンジver</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/54-summer-arrange.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">午前7時のニュース／中継回線アレンジ / 1:48</p>
           </div>
         </div>
       </section>
