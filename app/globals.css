@@ -103,7 +103,7 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .heroTopline { top:78px; }
   .heroPortrait { object-position:64% center; opacity:.74; }
   .heroCopy { top:25%; right:5vw; }
-  .hero h1 { font-size:clamp(3.15rem,15vw,5.2rem); }
+  .hero h1 { width:fit-content; padding:.12em .14em .16em; background:rgba(255,255,255,.88); box-shadow:0 0 0 1px rgba(0,0,0,.08); font-size:clamp(3.15rem,15vw,5.2rem); }
   .heroLogoWrap { width:48vw; bottom:7vw; }
   .scrollHint { display:none; }
   .storyBody,.record,.gameTeaserBody,.newTrack { grid-template-columns:1fr; }
