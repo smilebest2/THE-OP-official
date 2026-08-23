@@ -201,7 +201,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 05</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">RADIO NEWS ARRANGE</p>
             <h3>54歳の夏<br />アレンジver</h3>
@@ -211,6 +211,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">午前7時のニュース／中継回線アレンジ / 1:48</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/namba-14-demo-cover.webp"
+            alt="14時を示す街時計と難波を歩く二人を描いた、なんば14時（仮）デモ版の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 06</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">DEMO RECORDING</p>
+            <h3>なんば14時（仮）<br />デモ版</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/namba-14-demo.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">冒頭カット・クリア調整版 / 2:22</p>
           </div>
         </div>
       </section>
