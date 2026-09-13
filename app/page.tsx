@@ -2,6 +2,7 @@ const navItems = [
   ["01", "STORY", "#story"],
   ["02", "FILM", "#film"],
   ["03", "MUSIC", "#music"],
+  ["04", "GAME風", "#game"],
 ] as const;
 
 export default function Home() {
@@ -90,12 +91,26 @@ export default function Home() {
           </video>
           <p><span>THE O.P</span><span>54歳の夏 — OFFICIAL TRAILER</span></p>
         </div>
+        <div className="specialFilmHeading">
+          <div>
+            <p className="eyebrow">SPECIAL FILM / 2026</p>
+            <h3>PSYCHEDELIC<br />TRIP PV</h3>
+          </div>
+          <p>ギターと声が、幾何学と波形に変わる。<br />音に反応して変容する、約1分31秒の映像作品。</p>
+        </div>
+        <div className="videoFrame specialFilmFrame">
+          <video controls playsInline preload="metadata" poster="/psychedelic-trip-pv-poster.webp">
+            <source src="/psychedelic-trip-pv.mp4" type="video/mp4" />
+            お使いのブラウザは動画再生に対応していません。
+          </video>
+          <p><span>THE O.P</span><span>AUDIO-REACTIVE VISUAL / 01:31</span></p>
+        </div>
       </section>
 
       <section className="music section" id="music" aria-labelledby="music-title">
         <div className="sectionIndex">
           <span>03</span>
-          <p>MUSIC / ORIGINAL RECORDING</p>
+          <p>MUSIC / THE O.P RECORDINGS</p>
         </div>
         <div className="record">
           <div className="recordArt" aria-hidden="true">
@@ -113,6 +128,171 @@ export default function Home() {
             </audio>
             <p className="note">iPhoneで録音された、二人の最初の記録。</p>
           </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/wachugonadu-cover.png"
+            alt="海岸線を走るクラシックカーを描いた、わちゅごなどぅの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 02</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>わちゅごなどぅ</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/wachugonadu.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">Aメロ接続版 / 1:16</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/question-cover.png"
+            alt="受話器が外れた黒電話とコードを描いた、Questionの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 03</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>Question</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/question.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">クリア・音量調整版 / 1:56</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/erimo-misaki-cover.png"
+            alt="強風の岬に立つコート姿と荒波を描いた、えりも岬の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 04</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">NEW RECORDING</p>
+            <h3>えりも岬</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/erimo-misaki.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">クリア・音量調整版 / 1:28</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/54-summer-arrange-cover.png"
+            alt="午前7時を表示する古いラジオと二人のシルエットを描いた、54歳の夏 アレンジverの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 05</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">RADIO NEWS ARRANGE</p>
+            <h3>54歳の夏<br />アレンジver</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/54-summer-arrange.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">午前7時のニュース／中継回線アレンジ / 1:48</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/namba-14-demo-cover.webp"
+            alt="14時を示す街時計と難波を歩く二人を描いた、なんば14時（仮）デモ版の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 06</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">DEMO RECORDING</p>
+            <h3>なんば14時（仮）<br />デモ版</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/namba-14-demo.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">冒頭カット・クリア調整版 / 2:22</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/august-rain-cover.webp"
+            alt="傘の下に立つ二人とギターを描いた、八月の雨のシンプルな白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 07</span>
+              <b>2026</b>
+            </div>
+            <p className="eyebrow">LIVE RECORDING</p>
+            <h3>八月の雨</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/august-rain.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">カラオケボックス録音／声前クリア版 / 3:15</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/today-between-cover.webp"
+            alt="夜と朝を分ける白黒の境界に二人が立つ、今日のあわいのジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 08</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">LIVE RECORDING</p>
+            <h3>今日のあわい</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/today-between.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">外部音楽低減・強力版 / 4:12</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="gameTeaser section darkSection" id="game" aria-labelledby="game-title">
+        <div className="sectionIndex light">
+          <span>04</span>
+          <p>GAME風 / MUSIC EXPERIENCE</p>
+        </div>
+        <div className="gameTeaserBody">
+          <div className="gameTeaserCopy">
+            <p className="eyebrow">YAMECHIMAE × DONMAI</p>
+            <h2 id="game-title">押して、<br />押し返す。</h2>
+            <p>「やめちまえ」と「どんまい」。<br />楽曲の掛け声に合わせて二つの勢力がぶつかる、THE O.PのGAME風ミュージック体験。</p>
+            <a className="gameCta" href="/game">GAME風を始める <span aria-hidden="true">↗</span></a>
+          </div>
+          <a className="gameVisual" href="/game" aria-label="やめちまえ × どんまい GAME風を開く">
+            <span>RED CROWD</span><b>VS</b><span>BLUE CROWD</span>
+          </a>
         </div>
       </section>
 
