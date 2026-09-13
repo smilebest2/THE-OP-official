@@ -243,7 +243,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 07</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">LIVE RECORDING</p>
             <h3>八月の雨</h3>
@@ -253,6 +253,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">カラオケボックス録音／声前クリア版 / 3:15</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/today-between-cover.webp"
+            alt="夜と朝を分ける白黒の境界に二人が立つ、今日のあわいのジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 08</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">LIVE RECORDING</p>
+            <h3>今日のあわい</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/today-between.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">外部音楽低減・強力版 / 4:12</p>
           </div>
         </div>
       </section>
