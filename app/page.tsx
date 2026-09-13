@@ -222,7 +222,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 06</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">DEMO RECORDING</p>
             <h3>なんば14時（仮）<br />デモ版</h3>
@@ -232,6 +232,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">冒頭カット・クリア調整版 / 2:22</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/august-rain-cover.webp"
+            alt="傘の下に立つ二人とギターを描いた、八月の雨のシンプルな白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 07</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">LIVE RECORDING</p>
+            <h3>八月の雨</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/august-rain.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">カラオケボックス録音／声前クリア版 / 3:15</p>
           </div>
         </div>
       </section>
