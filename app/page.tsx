@@ -264,7 +264,7 @@ export default function Home() {
           <div className="newTrackMain">
             <div className="newTrackNumber">
               <span>TRACK 08</span>
-              <b>NEW</b>
+              <b>2026</b>
             </div>
             <p className="eyebrow">LIVE RECORDING</p>
             <h3>今日のあわい</h3>
@@ -274,6 +274,27 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">外部音楽低減・強力版 / 4:12</p>
+          </div>
+        </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/everyday-me-cover.webp"
+            alt="朝の窓辺でギターと過ごす一人を描いた、日常の僕の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 09</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">LIVE RECORDING</p>
+            <h3>日常の僕</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/everyday-me.m4a" type="audio/mp4" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">冒頭カット・クリア調整版 / 2:45</p>
           </div>
         </div>
       </section>
