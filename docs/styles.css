@@ -54,6 +54,11 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .specialFilmHeading h3 { margin:0; font-family:Arial Black,Impact,sans-serif; font-size:clamp(3rem,8vw,8rem); line-height:.83; letter-spacing:-.09em; }
 .specialFilmHeading > p { margin:0 0 .4rem; text-align:right; font-family:"Yu Mincho",serif; font-size:clamp(.85rem,1.3vw,1.1rem); line-height:1.9; }
 .specialFilmFrame { margin-top:2.5rem; border-color:#8b24ff; box-shadow:0 0 0 1px rgba(255,0,204,.28),0 0 55px rgba(92,0,255,.22); }
+.portraitFilmFrame { width:min(100%,480px); margin:2.5rem auto 0; }
+.portraitFilmFrame video { aspect-ratio:9/16; max-height:none; }
+.portraitFilmFrame > p { gap:1rem; line-height:1.5; }
+.trackFilmLink { display:inline-block; margin-top:1rem; padding-bottom:.35rem; border-bottom:1px solid currentColor; font:700 .8rem/1.5 "Yu Gothic",sans-serif; }
+.trackFilmLink:hover,.trackFilmLink:focus-visible { opacity:.65; }
 
 .record { display:grid; grid-template-columns:minmax(280px,1fr) 1.2fr; gap:8vw; align-items:center; padding-top:5rem; }
 .recordArt { aspect-ratio:1; padding:2rem; display:flex; flex-direction:column; justify-content:space-between; color:#fff; background:#000; font-family:Arial,sans-serif; letter-spacing:.15em; }

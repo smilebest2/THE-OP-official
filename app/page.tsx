@@ -105,6 +105,20 @@ export default function Home() {
           </video>
           <p><span>THE O.P</span><span>AUDIO-REACTIVE VISUAL / 01:31</span></p>
         </div>
+        <div className="specialFilmHeading" id="miketsu-film">
+          <div>
+            <p className="eyebrow">MUSIC VIDEO / 2026</p>
+            <h3>未決紛争<br />PV</h3>
+          </div>
+          <p>「未決紛争」の縦型ミュージックビデオ。<br />ギターと歌に合わせた、3分23秒の映像。</p>
+        </div>
+        <div className="videoFrame portraitFilmFrame">
+          <video controls playsInline preload="metadata" poster="/miketsu-funso-pv-poster.jpg" aria-label="未決紛争のPV">
+            <source src="/miketsu-funso-pv.mp4" type="video/mp4" />
+            お使いのブラウザは動画再生に対応していません。
+          </video>
+          <p><span>THE O.P</span><span>未決紛争 — MUSIC VIDEO / 03:23</span></p>
+        </div>
       </section>
 
       <section className="music section" id="music" aria-labelledby="music-title">
@@ -316,6 +330,7 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">冒頭カット・クリア調整版 / 3:23</p>
+            <a className="trackFilmLink" href="#miketsu-film">「未決紛争」PVを見る ↗</a>
           </div>
         </div>
       </section>
