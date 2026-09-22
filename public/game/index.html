@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0c15" />
+    <meta name="description" content="THE O.Pの楽曲に合わせて「やめちまえ」と「どんまい」が押し合うGAME風 MUSIC EXPERIENCE" />
+    <title>やめちまえ × どんまい | THE O.P GAME風</title>
+    <meta property="og:title" content="やめちまえ × どんまい | THE O.P GAME風" />
+    <meta property="og:description" content="THE O.Pの楽曲に合わせて二つの勢力が押し合う、GAME風 MUSIC EXPERIENCE。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://the-op-official.xotaken47.chatgpt.site/game" />
+    <meta property="og:image" content="https://the-op-official.xotaken47.chatgpt.site/game/assets/crowd-battle-v2.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="やめちまえ × どんまい | THE O.P GAME風" />
+    <meta name="twitter:description" content="THE O.Pの楽曲に合わせて二つの勢力が押し合う、GAME風 MUSIC EXPERIENCE。" />
+    <meta name="twitter:image" content="https://the-op-official.xotaken47.chatgpt.site/game/assets/crowd-battle-v2.webp" />
+    <link rel="stylesheet" href="./src/style.css?v=15" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="backdrop" aria-hidden="true">
+        <div class="side side--quit"></div>
+        <div class="side side--cheer"></div>
+        <div class="grain"></div>
+      </div>
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__eyebrow">THE O.P / GAME風 MUSIC EXPERIENCE</span>
+          <h1><span>やめちまえ</span><b>×</b><span>どんまい</span></h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="back-link" href="../">THE O.Pへ戻る</a>
+          <button id="soundButton" class="icon-button" type="button" aria-label="音をミュート" aria-pressed="false">
+            <span class="sound-on">♪</span><span class="sound-off">×</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="game-shell" aria-label="ゲーム画面">
+        <div class="hud">
+          <div class="score-card score-card--quit">
+            <span>RED CROWD</span><strong>やめちまえ</strong>
+          </div>
+          <div class="clock" aria-live="polite">
+            <span id="roundLabel">READY</span>
+            <strong id="timer">1:44</strong>
+          </div>
+          <div class="score-card score-card--cheer">
+            <span>BLUE CROWD</span><strong>どんまい</strong>
+          </div>
+        </div>
+
+        <div id="arena" class="arena">
+          <div id="crowdScene" class="crowd-scene" aria-hidden="true"></div>
+          <div class="territory-tint territory-tint--quit" aria-hidden="true"></div>
+          <div class="territory-tint territory-tint--cheer" aria-hidden="true"></div>
+          <div class="word word--quit" aria-hidden="true">
+            <span>やめ</span><span>ちまえ</span>
+          </div>
+          <div class="word word--cheer" aria-hidden="true">
+            <span>どん</span><span>まい</span>
+          </div>
+
+          <div id="frontline" class="frontline" aria-hidden="true">
+            <div class="frontline__spark"></div>
+            <span>VS</span>
+          </div>
+
+          <div id="beatCore" class="beat-core" aria-hidden="true">
+            <div class="beat-core__ring"></div>
+            <div class="beat-core__dot"></div>
+          </div>
+
+          <div id="judgement" class="judgement" aria-live="assertive"></div>
+          <div id="quitShoutLayer" class="shout-layer shout-layer--quit" aria-hidden="true"></div>
+          <div id="cheerShoutLayer" class="shout-layer shout-layer--cheer" aria-hidden="true"></div>
+          <div id="particles" class="particles" aria-hidden="true"></div>
+        </div>
+
+        <div class="beat-track" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="controls">
+          <p id="hint">再生すると、録音に合わせてGAME風バトルが始まります</p>
+          <button id="pushButton" class="push-button" type="button" disabled>
+            <span class="push-button__small">BEATで</span>
+            <strong id="pushLabel">PUSH!</strong>
+            <kbd>SPACE</kbd>
+          </button>
+        </div>
+      </section>
+
+      <div id="startPanel" class="modal" role="dialog" aria-modal="true" aria-labelledby="startTitle">
+        <div class="modal__card intro-card">
+          <span class="kicker">THE O.P / GAME風 MUSIC EXPERIENCE</span>
+          <h2 id="startTitle">押して、押し返す。</h2>
+          <p>音源の掛け声が入るたびに、対応する勢力が動きます。<br />後半で歌い手が変わる声にも反応します。</p>
+          <button id="startButton" class="primary-action start-action" type="button">BGMを再生して始める</button>
+          <small>添付されたオリジナル録音を再生します　⌁　イヤホン推奨</small>
+        </div>
+      </div>
+
+      <div id="resultPanel" class="modal modal--hidden" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+        <div class="modal__card result-card">
+          <span id="resultKicker" class="kicker">BATTLE FINISHED</span>
+          <div id="resultStamp" class="result-stamp">どんまい</div>
+          <h2 id="resultTitle">はい、ありがとうございました。</h2>
+          <p id="resultCopy">やめちまえも、どんまいも、どちらも必要な言葉です。</p>
+          <div class="result-actions">
+            <button id="retryButton" class="primary-action" type="button">もう一度再生</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <span>GAME風 EXPERIENCE</span><span>1:44 TRACK</span><span>125 BPM</span>
+      </footer>
+    </main>
+    <script type="module" src="./src/main.js?v=15"></script>
+  </body>
+</html>
