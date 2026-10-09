@@ -78,6 +78,11 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .newTrackNumber b { width:fit-content; padding:.5rem .65rem; color:#fff; background:#000; }
 .newTrackMain h3 { margin:.2rem 0 1rem; font-family:"Yu Mincho",serif; font-size:clamp(3rem,6vw,6rem); font-weight:400; line-height:1; letter-spacing:-.07em; }
 .newTrackMain audio { width:100%; margin:2.5rem 0 1rem; filter:grayscale(1) contrast(1.2); }
+.alternateTake { margin-top:2.5rem; padding:1.5rem 0 0; border-top:1px solid #888; }
+.alternateTakeLabel { display:flex; justify-content:space-between; align-items:center; font:700 .6rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.alternateTakeLabel b { padding:.45rem .6rem; color:#fff; background:#000; }
+.alternateTake h4 { margin:1rem 0 .8rem; font-family:"Yu Mincho",serif; font-size:clamp(1.6rem,3vw,2.6rem); font-weight:400; line-height:1.25; }
+.alternateTake audio { margin-top:1.5rem; }
 
 .gameTeaser { overflow:hidden; }
 .gameTeaserBody { display:grid; grid-template-columns:.72fr 1.28fr; gap:6vw; align-items:center; padding-top:5rem; }

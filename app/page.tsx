@@ -288,6 +288,16 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">外部音楽低減・強力版 / 4:12</p>
+            <div className="alternateTake">
+              <div className="alternateTakeLabel"><span>AI ARRANGE</span><b>NEW</b></div>
+              <h4>今夜もどこかで会いましょう</h4>
+              <p className="credits">AI VERSION / BASED ON「今日のあわい」</p>
+              <audio controls preload="metadata">
+                <source src="/today-between-ai.mp3" type="audio/mpeg" />
+                お使いのブラウザは音声再生に対応していません。
+              </audio>
+              <p className="note">「今日のあわい」AIアレンジ版 / 4:06</p>
+            </div>
           </div>
         </div>
         <div className="newTrack">
