@@ -319,6 +319,16 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">冒頭カット・クリア調整版 / 2:45</p>
+            <div className="alternateTake">
+              <div className="alternateTakeLabel"><span>MIX VERSION</span><b>NEW</b></div>
+              <h4>まあいいか</h4>
+              <p className="credits">MIX VERSION / BASED ON「日常の僕」</p>
+              <audio controls preload="metadata">
+                <source src="/everyday-me-mix.mp3" type="audio/mpeg" />
+                お使いのブラウザは音声再生に対応していません。
+              </audio>
+              <p className="note">「日常の僕」MIX版 / 3:04</p>
+            </div>
           </div>
         </div>
         <div className="newTrack">
@@ -341,6 +351,16 @@ export default function Home() {
             </audio>
             <p className="note">冒頭カット・クリア調整版 / 3:23</p>
             <a className="trackFilmLink" href="#miketsu-film">「未決紛争」PVを見る ↗</a>
+            <div className="alternateTake">
+              <div className="alternateTakeLabel"><span>AI ARRANGE</span><b>NEW</b></div>
+              <h4>Yamechimae Donmai</h4>
+              <p className="credits">AI VERSION / BASED ON「未決紛争」</p>
+              <audio controls preload="metadata">
+                <source src="/miketsu-funso-ai.mp3" type="audio/mpeg" />
+                お使いのブラウザは音声再生に対応していません。
+              </audio>
+              <p className="note">「未決紛争」AIアレンジ版 / 3:12</p>
+            </div>
           </div>
         </div>
         <div className="newTrack">
