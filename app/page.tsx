@@ -343,6 +343,46 @@ export default function Home() {
             <a className="trackFilmLink" href="#miketsu-film">「未決紛争」PVを見る ↗</a>
           </div>
         </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/otsukaresama-cover.png"
+            alt="終電前のホームに立つ細身の会社員を描いた、お疲れ様です。の白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 11</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">NEW SONG / REMASTERED</p>
+            <h3>お疲れ様です。</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/otsukaresama.mp3" type="audio/mpeg" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">Remastered / 4:02</p>
+            <details className="lyricsDisclosure">
+              <summary>歌詞を見る</summary>
+              <div className="lyricsText">
+                <h4>【1番】</h4>
+                <p>ねぇ僕は毎日<br />仕事に勤しんでいるよ<br />気づけば夜になるほど<br />夢中で取り組んでいるよ</p>
+                <p>だけども失敗したり<br />うまくいかなくて落ち込むよ<br />自分を責めたりしちゃって<br />苛立つ時もありますよ</p>
+                <p>ねぇーーそんな毎日<br />あなたはどう思いますか<br />だいたい似たような事で<br />過ごしてると思います</p>
+                <p>あーーーどこか遠くへ<br />行きたくなったりするよ<br />だけど働かないとね<br />感情的になれないね</p>
+                <p>愛する<br />人よ<br />元気にしてますか</p>
+                <p className="lyricsChorus">お疲れ様です<br />ほんとにほんとにお疲れ様です<br />ご苦労様です<br />ほんとにほんとにご苦労様です</p>
+                <h4>【2番】</h4>
+                <p>ねぇ僕はこの頃<br />昔を思い出しているよ<br />気づけば歳を重ねて<br />知らないうちに大人だよ</p>
+                <p>だけども笑ってみたり<br />くだらないことで悩んだり<br />誰かを羨ましがったり<br />情けない時もありますよ</p>
+                <p>ねぇーーそんな人生<br />あなたはどう思いますか<br />だいたい似たような道を<br />歩いてると思います</p>
+                <p>あーーーあの日の夢は<br />どこかに置いてきちゃったよ<br />だけど明日は来るからね<br />もう少しだけ歩こうか</p>
+                <p>愛する<br />人よ<br />元気にしてますか</p>
+                <p className="lyricsChorus">お疲れ様です<br />ほんとにほんとにお疲れ様です<br />ご苦労様です<br />ほんとにほんとにご苦労様です</p>
+              </div>
+            </details>
+          </div>
+        </div>
       </section>
 
       <section className="gameTeaser section darkSection" id="game" aria-labelledby="game-title">

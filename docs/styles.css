@@ -81,6 +81,16 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .alternateTakeLabel b { padding:.45rem .6rem; color:#fff; background:#000; }
 .alternateTake h4 { margin:1rem 0 .8rem; font-family:"Yu Mincho",serif; font-size:clamp(1.6rem,3vw,2.6rem); font-weight:400; line-height:1.25; }
 .alternateTake audio { margin-top:1.5rem; }
+.lyricsDisclosure { margin-top:2rem; border-top:1px solid #000; border-bottom:1px solid #000; }
+.lyricsDisclosure summary { position:relative; padding:1.15rem 2.5rem 1.15rem 0; cursor:pointer; list-style:none; font:700 .72rem/1.4 "Yu Gothic",sans-serif; letter-spacing:.16em; }
+.lyricsDisclosure summary::-webkit-details-marker { display:none; }
+.lyricsDisclosure summary::after { content:'＋'; position:absolute; top:50%; right:.25rem; transform:translateY(-50%); font-size:1.25rem; font-weight:400; }
+.lyricsDisclosure[open] summary::after { content:'−'; }
+.lyricsDisclosure summary:focus-visible { outline:3px solid currentColor; outline-offset:4px; }
+.lyricsText { padding:1rem 0 2rem; border-top:1px solid #aaa; font-family:"Yu Mincho",serif; font-size:clamp(.95rem,1.25vw,1.08rem); line-height:1.9; }
+.lyricsText h4 { margin:1.5rem 0 1rem; font-family:"Yu Gothic",sans-serif; font-size:.75rem; letter-spacing:.14em; }
+.lyricsText p { margin:0 0 1.7rem; }
+.lyricsText .lyricsChorus { padding-left:1rem; border-left:3px solid #000; }
 
 .gameTeaser { overflow:hidden; }
 .gameTeaserBody { display:grid; grid-template-columns:.72fr 1.28fr; gap:6vw; align-items:center; padding-top:5rem; }
