@@ -382,6 +382,46 @@ export default function Home() {
             </details>
           </div>
         </div>
+        <div className="newTrack">
+          <img
+            className="newTrackArt"
+            src="/nanimo-sezu-cover.png"
+            alt="川辺で普段着の男が黄昏る姿を描いた、何にもせずの白黒ジャケット"
+          />
+          <div className="newTrackMain">
+            <div className="newTrackNumber">
+              <span>TRACK 12</span>
+              <b>NEW</b>
+            </div>
+            <p className="eyebrow">NEW SONG / ORIGINAL MIX</p>
+            <h3>何にもせず</h3>
+            <p className="credits">GUITAR &amp; VOCAL / THE O.P</p>
+            <audio controls preload="metadata">
+              <source src="/nanimo-sezu.mp3" type="audio/mpeg" />
+              お使いのブラウザは音声再生に対応していません。
+            </audio>
+            <p className="note">Original mix / 3:28</p>
+            <details className="lyricsDisclosure">
+              <summary>歌詞を見る</summary>
+              <div className="lyricsText">
+                <h4>【1番】</h4>
+                <p>かわべに映るビルの影<br />はるか空にはジェット機が飛んで</p>
+                <p className="lyricsChorus">なんにもせず黄昏て<br />何もしたくない</p>
+                <p>急ぎ足のサラリーマン<br />それを尻目におじいさん</p>
+                <p className="lyricsChorus">なんにもせず黄昏て<br />何もしたくない</p>
+                <p>今日という日を引き替えに<br />心の中をひと休み<br />時計の針がカチカチと時を刻む</p>
+                <p>きっと幸せなんかも気付かぬまま<br />毎日が過ぎてゆき<br />ぼちぼちやるさと唾を吐いて<br />タバコをふかした</p>
+                <h4>【2番】</h4>
+                <p>夕陽に染まるビルの窓<br />東の空にお月さん</p>
+                <p className="lyricsChorus">なんにもせず黄昏て<br />何もしたくない</p>
+                <p>自転車こいでる学生さん<br />ベンチで酒飲むおじいさん</p>
+                <p className="lyricsChorus">なんにもせず黄昏て<br />何もしたくない</p>
+                <p>今日という日を引き替えに<br />心の中をひと休み<br />時計の針がカチカチと時を刻む</p>
+                <p>きっと大事なことにも気付かぬまま<br />毎日が過ぎてゆき<br />仕方がないなと空を見上げ<br />タバコを消した</p>
+              </div>
+            </details>
+          </div>
+        </div>
       </section>
 
       <section className="gameTeaser section darkSection" id="game" aria-labelledby="game-title">
