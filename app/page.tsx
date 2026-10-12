@@ -5,6 +5,7 @@ const navItems = [
   ["02", "FILM", "#film"],
   ["03", "MUSIC", "#music"],
   ["04", "GAME風", "#game"],
+  ["05", "制作日記", "/diary/"],
 ] as const;
 
 export default function Home() {

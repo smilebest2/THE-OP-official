@@ -112,6 +112,49 @@ footer { display:flex; justify-content:space-between; align-items:end; gap:2rem;
 footer img { width:min(380px,48vw); filter:invert(1); }
 footer div { text-align:right; font:700 .55rem/1.8 Arial,sans-serif; letter-spacing:.16em; }
 
+/* MAKING JOURNAL */
+.diaryPage { min-height:100vh; background:#f7f7f3; }
+.diaryPage .diaryHeader { color:#fff; background:#050505; mix-blend-mode:normal; }
+.diaryHero { min-height:68vh; padding:clamp(9rem,18vw,14rem) 5vw 6rem; color:#fff; background:#050505; border-bottom:1px solid #555; }
+.diaryHero h1 { margin:0; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(4.5rem,12vw,11rem); font-weight:400; line-height:.9; letter-spacing:-.08em; }
+.diaryHero > p:last-child { margin:3rem 0 0 auto; width:min(100%,34rem); font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(1.2rem,2.2vw,2rem); line-height:1.8; }
+.diaryIndex { min-height:70vh; }
+.diaryEntries { margin-top:clamp(3rem,7vw,6rem); border-top:2px solid #000; }
+.diaryEntry { display:grid; grid-template-columns:minmax(8rem,.28fr) 1fr; gap:clamp(2rem,6vw,7rem); padding:clamp(2.5rem,5vw,4.5rem) 0; border-bottom:1px solid #000; }
+.diaryEntryMeta { display:flex; flex-direction:column; align-items:flex-start; gap:1rem; font:700 .68rem/1 Arial,sans-serif; letter-spacing:.14em; }
+.diaryEntryMeta b { font-size:clamp(2.1rem,4vw,4rem); letter-spacing:-.06em; }
+.diaryEntryMeta time { padding:.5rem .65rem; color:#fff; background:#000; }
+.diaryEntry h2 { max-width:900px; margin:0; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(2rem,4.5vw,4.5rem); font-weight:400; line-height:1.25; letter-spacing:-.045em; }
+.diaryEntry h2 a:hover,.diaryEntry h2 a:focus-visible { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:.16em; }
+.diaryEntry div > p { max-width:760px; margin:2rem 0; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:1rem; line-height:2; }
+.diaryReadMore,.diaryBack { display:inline-flex; gap:.8rem; align-items:center; padding-bottom:.4rem; border-bottom:1px solid currentColor; font:700 .72rem/1.5 "Yu Gothic",sans-serif; letter-spacing:.1em; }
+.diaryArticle { padding:clamp(8.5rem,13vw,11rem) 5vw clamp(6rem,10vw,10rem); }
+.diaryArticleHeader { max-width:1120px; margin:0 auto; padding-bottom:clamp(4rem,8vw,7rem); border-bottom:2px solid #000; }
+.diaryArticleMeta { display:grid; grid-template-columns:1fr auto auto; gap:1.5rem; align-items:center; margin:clamp(3.5rem,7vw,6rem) 0 2rem; font:700 .65rem/1 Arial,sans-serif; letter-spacing:.15em; }
+.diaryArticleMeta b { font-size:clamp(2rem,4vw,4.3rem); letter-spacing:-.06em; }
+.diaryArticleMeta time { padding:.55rem .7rem; color:#fff; background:#000; }
+.diaryArticleHeader h1 { max-width:1000px; margin:0; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(2.7rem,6.5vw,6.7rem); font-weight:400; line-height:1.15; letter-spacing:-.065em; }
+.diaryArticleBody { width:min(100%,860px); margin:0 auto; }
+.diaryArticleSection { padding:clamp(4rem,8vw,7rem) 0 0; }
+.diaryArticleSection > h2 { margin:0 0 2.6rem; padding:0 0 .8rem; border-bottom:1px solid #000; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(2rem,4vw,3.5rem); font-weight:400; line-height:1.35; letter-spacing:-.04em; }
+.diaryArticleSection > p,.diaryStep p,.diaryMemo p { margin:0 0 1.45rem; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(1.02rem,1.45vw,1.14rem); line-height:2.05; }
+.diaryStep { margin:0 0 2rem; padding:clamp(1.5rem,3vw,2.4rem); border:1px solid #000; background:#fff; }
+.diaryStepHeading { display:flex; gap:1.2rem; align-items:center; margin-bottom:1.6rem; }
+.diaryStepHeading span { flex:0 0 auto; display:grid; place-items:center; width:3.1rem; height:3.1rem; color:#fff; background:#000; border-radius:50%; font:700 1.35rem/1 Arial,sans-serif; }
+.diaryStepHeading h3,.diaryMemo h3 { margin:0; font-size:clamp(1.1rem,2vw,1.45rem); line-height:1.5; }
+.diaryStep p:last-child,.diaryMemo p:last-child { margin-bottom:0; }
+.diaryMemo { margin:1.5rem 0; padding:clamp(1.5rem,3vw,2.4rem); color:#fff; background:#050505; border-left:7px solid #9a9a93; }
+.diaryMemo h3 { margin-bottom:1.2rem; font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif; }
+.diaryTableWrap { max-width:100%; margin:0 0 2.5rem; overflow-x:auto; border:1px solid #000; background:#fff; }
+.diaryTableWrap:focus-visible { outline:3px solid #000; outline-offset:4px; }
+.diaryTableWrap table { width:100%; min-width:38rem; border-collapse:collapse; font-size:.95rem; line-height:1.6; }
+.diaryTableWrap th,.diaryTableWrap td { padding:1rem 1.2rem; text-align:left; border-right:1px solid #aaa; border-bottom:1px solid #aaa; }
+.diaryTableWrap thead th { color:#fff; background:#050505; font-size:.72rem; letter-spacing:.08em; }
+.diaryTableWrap tbody th { width:35%; background:#e7e7e1; }
+.diaryPager { width:min(100%,1120px); margin:clamp(5rem,10vw,9rem) auto 0; padding-top:2rem; display:grid; grid-template-columns:1fr 1fr; gap:2rem; border-top:1px solid #000; font:700 .72rem/1.7 "Yu Gothic",sans-serif; letter-spacing:.06em; }
+.diaryPager a:last-child { text-align:right; }
+.diaryBackBottom { margin-top:3rem; }
+
 a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid currentColor; outline-offset:4px; }
 @keyframes heroIn { from { opacity:0; transform:scale(1.04); } to { opacity:1; transform:scale(1); } }
 @keyframes rise { from { opacity:0; transform:translateY(35px); } to { opacity:1; transform:none; } }
@@ -119,6 +162,7 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
 
 @media (max-width:760px) {
   .siteHeader { height:58px; padding:0 5vw; }
+  .siteHeader nav { gap:.68rem; font-size:.56rem; letter-spacing:.06em; }
   nav a span { display:none; }
   .heroTopline { top:78px; }
   .heroPortrait { object-position:64% center; opacity:.74; }
@@ -138,6 +182,20 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .recordArt { max-width:520px; }
   footer { align-items:start; flex-direction:column; }
   footer div { text-align:left; }
+  .diaryHero { min-height:62vh; padding-top:8rem; }
+  .diaryHero > p:last-child { margin-top:2.5rem; }
+  .diaryEntry { grid-template-columns:1fr; gap:1.5rem; }
+  .diaryEntryMeta { flex-direction:row; align-items:center; justify-content:space-between; }
+  .diaryArticle { padding-right:6vw; padding-left:6vw; }
+  .diaryArticleMeta { grid-template-columns:1fr auto; gap:1rem; }
+  .diaryArticleMeta span { grid-column:1 / -1; }
+  .diaryArticleHeader h1 { font-size:clamp(2.45rem,12vw,4.2rem); }
+  .diaryArticleSection > h2 { font-size:clamp(1.75rem,8vw,2.6rem); }
+  .diaryStep { padding:1.3rem; }
+  .diaryStepHeading { align-items:flex-start; }
+  .diaryTableWrap { margin-right:-1vw; }
+  .diaryPager { grid-template-columns:1fr; }
+  .diaryPager a:last-child { text-align:left; }
 }
 
 @media (prefers-reduced-motion:reduce) {

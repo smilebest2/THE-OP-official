@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="THE O.Pの曲作りは、ギターを弾きながら歌い、それをiPhoneのボイスメモで録音するという、いたってシンプルなものだった。">
+  <title>iPhoneとAIで曲を作る。現在の制作方法と覚え書き | THE O.P 制作日記</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body><main class="diaryPage"><header class="siteHeader diaryHeader">
+    <a class="miniMark" href="../../index.html" aria-label="THE O.P ホーム">THE O.P</a>
+    <nav aria-label="メインナビゲーション"><a href="../../index.html#story"><span>01</span>STORY</a><a href="../../index.html#film"><span>02</span>FILM</a><a href="../../index.html#music"><span>03</span>MUSIC</a><a href="../../index.html#game"><span>04</span>GAME風</a><a href="../"><span>05</span>制作日記</a></nav>
+  </header><article class="diaryArticle">
+    <header class="diaryArticleHeader">
+      <a class="diaryBack" href="../">← 制作日記一覧</a>
+      <div class="diaryArticleMeta"><span>THE O.P 制作日記</span><b>#01</b><time>公開前</time></div>
+      <h1>iPhoneとAIで曲を作る。現在の制作方法と覚え書き</h1>
+    </header>
+    <div class="diaryArticleBody"><section class="diaryArticleSection">
+    <h2>そもそもの始まり</h2>
+    <p>THE O.Pの曲作りは、ギターを弾きながら歌い、それをiPhoneのボイスメモで録音するという、いたってシンプルなものだった。</p><p>以前はカラオケボックスで録音していたが、屋外にいい場所を発見。</p><p>青空スタジオはコストかからない。天気には左右されるが。。。</p><p>そんな録音環境で作った原曲をSunoに読み込ませてみたところ、元のメロディや曲を残しながら編曲ができることに気づく。</p><p>声もAIというのが残念。しかも上手すぎる。。。</p><p>そこで、伴奏だけを取り出して、自分で歌い直すことにした。</p>
+  </section><section class="diaryArticleSection">
+    <h2>現在の制作手順</h2>
+    <div class="diaryStep">
+    <div class="diaryStepHeading"><span>①</span><h3>原曲を録音する</h3></div>
+    <p>iPhoneのボイスメモでギターと歌を一緒に録音。</p><p>この段階では音質よりも、メロディ、歌詞、テンポ、曲の構成を残すことを優先する。</p>
+  </div><div class="diaryStep">
+    <div class="diaryStepHeading"><span>②</span><h3>Sunoで楽曲を制作する</h3></div>
+    <p>録音した原曲をアップロードし、ジャンルやアレンジを指定して生成する。</p><p>原曲をどこまで保持してくれるかは生成結果によって違うので、気に入ったものを選ぶ。</p>
+  </div><div class="diaryStep">
+    <div class="diaryStepHeading"><span>③</span><h3>Sunoから伴奏を取り出す</h3></div>
+    <p>ボーカル分離機能を使い、伴奏だけをダウンロードする。</p><p>歌声が残っていないか確認する。</p>
+  </div><div class="diaryStep">
+    <div class="diaryStepHeading"><span>④</span><h3>GarageBandで自分の声を入れる</h3></div>
+    <p>伴奏をiPhoneのGarageBandに読み込み、自分の歌を録音する。</p><p>ここが意外に時間を食う。</p><p>歌詞を間違える。リズムがずれる。声が割れる。</p><p>途中から録り直すことも考え、歌う前に録音位置や伴奏の再生範囲を確認が必須。</p>
+  </div><div class="diaryStep">
+    <div class="diaryStepHeading"><span>⑤</span><h3>Workで伴奏と歌声を合体する</h3></div>
+    <p>録音した自分の声だけを取り出し、伴奏と一緒にChatGPTのWorkへ渡す。</p><p>音量、タイミング、音質を調整してMIXする。</p><p>声と伴奏が合っているだけでは不十分。</p><p>声だけが前に出たり、伴奏が小さかったりすると、どうにも素人っぽく聞こえる。</p><p>実際、声をほんの少し前にずらしただけで改善した曲もあった。</p>
+  </div><div class="diaryStep">
+    <div class="diaryStepHeading"><span>⑥</span><h3>Sunoでリマスターを試す</h3></div>
+    <p>MIXした曲をSunoでリマスターする。</p><p>ただし、必ず良くなるわけではない。元のMIXのほうが良い場合もある。</p><p>また、Sunoで作った伴奏を再アップロードすると、既存音源との一致判定で拒否される場合もあった。</p><p>最終的には自分の耳で比較して決める。</p>
+  </div>
+  </section><section class="diaryArticleSection">
+    <h2>制作環境と費用</h2>
+    <div class="diaryTableWrap" tabindex="0" role="region" aria-label="制作環境と費用の表"><table><thead><tr><th scope="col">項目</th><th scope="col">使用しているもの</th></tr></thead><tbody><tr><th scope="row">原曲録音</th><td>iPhone・ボイスメモ</td></tr><tr><th scope="row">AI編曲</th><td>Suno</td></tr><tr><th scope="row">伴奏抽出</th><td>Suno</td></tr><tr><th scope="row">歌声録音・編集</th><td>GarageBand</td></tr><tr><th scope="row">音声MIX</th><td>ChatGPT Work</td></tr><tr><th scope="row">リマスター</th><td>Suno</td></tr><tr><th scope="row">イヤホン</th><td>ダイソー製・約1,000円</td></tr><tr><th scope="row">補助機材</th><td>モバイルバッテリー</td></tr><tr><th scope="row">録音場所</th><td>青空スタジオ／以前はカラオケボックス</td></tr></tbody></table></div><p>月額費用はSunoが約1,500円、ChatGPTが約3,000円。合計約4,500円。</p><p>録音専用のマイクやオーディオインターフェースは使用していない。</p><p>なお、ワイヤレスイヤホンは伴奏を聴くために使うが、Bluetooth接続時にGarageBandが意図したマイクで録音できない場合がある。録音前に短いテストをしておく。</p>
+  </section><section class="diaryArticleSection">
+    <h2>1曲にかかる時間</h2>
+    <p>原曲の録音から完成まで、だいたい1〜3時間。</p><p>もちろん曲によって違う。</p><p>Sunoで気に入ったアレンジがすぐに出れば早いが、何度も作り直すと、それだけ時間がかかる。</p><p>歌声の録音も同じ。</p><p>1回で歌えればいいが、そう簡単にはいかない。</p><p>それに3時間くらい経つと、集中力、やる気、アイデアがまとめて怪しくなってくる。</p><p>AIには疲労がないが、こちらにはある。</p><p>無理に続けても良くなるとは限らない。</p>
+  </section><section class="diaryArticleSection">
+    <h2>今回わかったこと・次回への覚え書き</h2>
+    <aside class="diaryMemo">
+    <h3>原曲は残しておく。</h3><p>Sunoで生成したものだけでなく、最初のボイスメモも保存する。あとから曲を作り直したくなったときに必要になる。</p>
+  </aside><aside class="diaryMemo">
+    <h3>Sunoの生成曲も気に入った版を保存する。</h3><p>別のアレンジを作ったり、ボーカルを分離したりするときに、どれが元になった曲なのか分からなくなりやすい。</p>
+  </aside><aside class="diaryMemo">
+    <h3>GarageBandでは最初に録音テストをする。</h3><p>伴奏が最後まで再生されるか、声が正常に録音されるか、イヤホンの接続で問題が起きないかを確認する。</p>
+  </aside><aside class="diaryMemo">
+    <h3>声と伴奏は別々に保存する。</h3><p>あとからタイミングや音量を直すため、完成MIXだけではなく、編集前の素材を残しておく。</p>
+  </aside><aside class="diaryMemo">
+    <h3>Workには修正内容を具体的に伝える。</h3><p>「いい感じにして」だけでは伝わりにくい。</p><p>伴奏が小さい、声が遅い、最後の声が欠けている、など、気になる箇所を明確にする。</p>
+  </aside><aside class="diaryMemo">
+    <h3>リマスターは元の音源と聴き比べる。</h3><p>リマスターしたから完成、というわけではない。</p>
+  </aside><aside class="diaryMemo">
+    <h3>完成した曲はバージョンを付けて保存する。</h3><p>修正を繰り返すと、どれが一番良かったのか分からなくなる。</p>
+  </aside>
+  </section><section class="diaryArticleSection">
+    <h2>次回試してみたいこと</h2>
+    <p>声入れの段階で、なるべく手直しの少ない録音をすること。</p><p>そのためには、録音環境やマイクとの距離、伴奏の聴き方も見直す必要がありそうだ。</p><p>また、WorkでのMIXも、毎回ゼロから指示するのではなく、うまくいった設定を次回に引き継げるようにしたい。</p><aside class="diaryMemo">
+    <h3>自分の声がちゃんと出る音域で曲を作る。</h3><p>これが案外、大事なことだった。</p><p>ギターを弾きながら何となく低い声で歌って原曲を作ると、そのままSunoで立派な伴奏が出来上がってしまう。</p><p>ところが、いざ自分で歌い直すと声量が出ない。声に張りもない。</p><p>AIはうまく歌ってくれるが、こちらはそうはいかない。</p><p>あとからMIXであれこれ調整する前に、そもそも自分が気持ちよく歌える高さで曲を作っておくべきだった。</p><p>自分の声量と張りが出る音域を重視し、次回からキーG主体で作曲する。</p>
+  </aside><aside class="diaryMemo">
+    <h3>声入れで注意</h3><p>音程を外さないように伴奏を聴いてから歌い出す癖があり、歌声が微妙に遅れることに気づいた。次回はリズムを先に体に入れ、拍に合わせて歌い出すことを意識する。</p>
+  </aside>
+  </section></div>
+    <nav class="diaryPager" aria-label="制作日記の記事間ナビゲーション">
+    <span></span>
+    <span></span>
+  </nav><a class="diaryBack diaryBackBottom" href="../">← 制作日記一覧へ戻る</a>
+  </article><footer><img src="../../the-op-logo.png" alt="THE O.P"><div><p>THE O.P / OFFICIAL SITE</p><p>© 2026 THE O.P</p></div></footer></main></body>
+</html>
