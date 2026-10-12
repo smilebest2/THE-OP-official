@@ -30,7 +30,7 @@ test("renders the diary index and links to entry 01", async () => {
   assert.match(html, /<title>制作日記 \| THE O\.P<\/title>/);
   assert.match(html, /iPhoneとAIで曲を作る。現在の制作方法と覚え書き/);
   assert.match(html, /href="\/diary\/01\/"/);
-  assert.match(html, />公開前<\/time>/);
+  assert.match(html, /<time dateTime="2026-10-12">2026\.10\.12<\/time>/);
 });
 
 test("renders article 01 with the approved text, steps and table", async () => {
@@ -43,7 +43,7 @@ test("renders article 01 with the approved text, steps and table", async () => {
   assert.match(html, /<span>⑥<\/span>/);
   assert.match(html, /<table>/);
   assert.match(html, /href="\/diary\/">← 制作日記一覧/);
-  assert.doesNotMatch(html, /datetime="2026-/);
+  assert.match(html, /dateTime="2026-10-12"/);
 });
 
 test("generates matching GitHub Pages files", async () => {
@@ -56,5 +56,5 @@ test("generates matching GitHub Pages files", async () => {
   assert.match(index, /href="01\/"/);
   assert.match(article, /自分の声量と張りが出る音域を重視し、次回からキーG主体で作曲する。/);
   assert.match(article, /<meta name="viewport" content="width=device-width,initial-scale=1">/);
-  assert.doesNotMatch(article, /datetime="2026-/);
+  assert.match(article, /datetime="2026-10-12"/);
 });
