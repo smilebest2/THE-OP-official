@@ -1,3 +1,5 @@
+import AudioPlaybackGuard from "./AudioPlaybackGuard";
+
 const navItems = [
   ["01", "STORY", "#story"],
   ["02", "FILM", "#film"],
@@ -8,6 +10,7 @@ const navItems = [
 export default function Home() {
   return (
     <main>
+      <AudioPlaybackGuard />
       <header className="siteHeader">
         <a className="miniMark" href="#top" aria-label="THE O.P ホーム">
           THE O.P
