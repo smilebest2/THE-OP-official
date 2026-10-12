@@ -7,8 +7,9 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "node scripts/generate-diary-static.mjs && vinext build",
+    "build": "node scripts/generate-diary-static.mjs && node scripts/generate-okama-versions-static.mjs && vinext build",
     "diary:build": "node scripts/generate-diary-static.mjs",
+    "special:build": "node scripts/generate-okama-versions-static.mjs",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

@@ -92,6 +92,54 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .lyricsText p { margin:0 0 1.7rem; }
 .lyricsText .lyricsChorus { padding-left:1rem; border-left:3px solid #000; }
 
+/* ONE LYRIC / FIVE ARRANGEMENTS */
+.versionTeaser { overflow:hidden; border-top:2px solid #000; background:#e9e9e3; }
+.versionTeaserBody { display:grid; grid-template-columns:.9fr 1.1fr; gap:7vw; align-items:center; padding-top:5rem; }
+.versionTeaserCopy h2 { margin:.2rem 0 1.5rem; font-family:"Yu Mincho",serif; font-size:clamp(3.4rem,7vw,7rem); font-weight:400; line-height:1; letter-spacing:-.08em; }
+.versionTeaserCopy > p:not(.eyebrow) { margin:0 0 2.2rem; font-family:"Yu Mincho",serif; font-size:clamp(1rem,1.5vw,1.25rem); line-height:2; }
+.versionCta { display:inline-flex; justify-content:space-between; gap:2rem; width:min(100%,340px); padding:1.2rem 1.3rem; color:#fff; background:#000; border:1px solid #000; font-size:.72rem; font-weight:700; letter-spacing:.1em; transition:.25s; }
+.versionCta:hover,.versionCta:focus-visible { color:#000; background:#fff; }
+.versionFive { display:grid; grid-template-columns:repeat(5,1fr); aspect-ratio:1.5; border:2px solid #000; transform:rotate(-2deg); box-shadow:14px 14px 0 #000; }
+.versionFive span { display:flex; align-items:end; justify-content:center; padding:.7rem .2rem; color:#fff; background:#000; border-right:1px solid #777; font-family:Arial Black,Impact,sans-serif; font-size:clamp(1.2rem,3vw,3.5rem); letter-spacing:-.08em; }
+.versionFive span:nth-child(even) { align-items:start; color:#000; background:#fff; border-color:#000; }
+.versionFive span:last-child { border-right:0; }
+.versionPage { min-height:100vh; background:#f7f7f3; }
+.versionPage .versionHeader { color:#fff; background:#050505; mix-blend-mode:normal; }
+.versionHero { position:relative; min-height:100svh; overflow:hidden; padding:clamp(9rem,16vw,13rem) 5vw 6rem; color:#fff; background:#050505; }
+.versionHero::after { content:''; position:absolute; right:-8vw; bottom:-18vw; width:48vw; aspect-ratio:1; border:1px solid #777; border-radius:50%; box-shadow:0 0 0 3vw #050505,0 0 0 calc(3vw + 1px) #555,0 0 0 7vw #050505,0 0 0 calc(7vw + 1px) #333; }
+.versionHero h1 { position:relative; z-index:1; max-width:11ch; margin:0; font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:clamp(4rem,11vw,10.5rem); font-weight:400; line-height:.9; letter-spacing:-.1em; }
+.versionHeroSub { position:relative; z-index:1; margin:2.5rem 0 0 42%; font-family:"Yu Mincho",serif; font-size:clamp(2rem,4vw,4.4rem); line-height:1.35; }
+.versionIntro { position:relative; z-index:1; width:min(100%,620px); margin:5rem 0 0 auto; padding:2rem 0 0; border-top:1px solid #777; }
+.versionIntro p { margin:0 0 .7rem; font-family:"Yu Mincho",serif; font-size:clamp(.95rem,1.4vw,1.15rem); line-height:1.85; }
+.versionHeroIndex { position:absolute; top:50%; right:4vw; z-index:1; display:flex; flex-direction:column; gap:.45rem; transform:translateY(-50%); font:700 .58rem/1 Arial,sans-serif; letter-spacing:.14em; }
+.versionCompareHeading { display:grid; grid-template-columns:1fr 1.1fr; gap:4vw; align-items:end; padding:clamp(4rem,8vw,7rem) 0; }
+.versionCompareHeading .eyebrow { align-self:start; }
+.versionCompareHeading h2 { grid-column:2; margin:0; font-family:"Yu Mincho",serif; font-size:clamp(3.4rem,7vw,7rem); font-weight:400; line-height:1; letter-spacing:-.08em; }
+.versionCompareHeading > p:last-child { grid-column:2; margin:1.5rem 0 0; font-family:"Yu Mincho",serif; line-height:1.9; }
+.versionTrackList { border-top:2px solid #000; }
+.versionTrack { display:grid; grid-template-columns:minmax(130px,.28fr) 1fr; min-height:310px; border-bottom:1px solid #000; background:#fff; }
+.versionTrack:nth-child(even) { color:#fff; background:#050505; }
+.versionTrackNumber { display:flex; align-items:center; justify-content:center; overflow:hidden; border-right:1px solid currentColor; font-family:Arial Black,Impact,sans-serif; font-size:clamp(5rem,12vw,12rem); line-height:.8; letter-spacing:-.12em; }
+.versionTrackMain { display:flex; flex-direction:column; justify-content:center; padding:clamp(2rem,5vw,4.5rem); }
+.versionTrackMeta { display:flex; justify-content:space-between; gap:1rem; font:700 .58rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.versionTrackMain h3 { margin:1.2rem 0 .6rem; font-family:"Yu Mincho",serif; font-size:clamp(2.5rem,5vw,5rem); font-weight:400; line-height:1; letter-spacing:-.06em; }
+.versionGenre { margin:0; opacity:.62; font-size:.72rem; font-weight:700; letter-spacing:.13em; }
+.versionTrack audio { width:100%; margin-top:2rem; filter:grayscale(1) contrast(1.15); }
+.versionUnavailable { margin-top:2rem; padding:1rem; border:1px solid currentColor; text-align:center; }
+.versionLyricsHeading { padding:clamp(4rem,8vw,7rem) 0 3rem; }
+.versionLyricsHeading h2 { margin:0; font-family:"Yu Mincho",serif; font-size:clamp(3.5rem,8vw,8rem); font-weight:400; line-height:1; letter-spacing:-.08em; }
+.versionLyricsDisclosure { border-top:1px solid #777; border-bottom:1px solid #777; }
+.versionLyricsDisclosure summary { position:relative; padding:1.5rem 3rem 1.5rem 0; cursor:pointer; list-style:none; font-size:.78rem; font-weight:700; letter-spacing:.16em; }
+.versionLyricsDisclosure summary::-webkit-details-marker { display:none; }
+.versionLyricsDisclosure summary::after { content:'＋'; position:absolute; right:.3rem; top:50%; transform:translateY(-50%); font-size:1.5rem; }
+.versionLyricsDisclosure[open] summary::after { content:'−'; }
+.versionLyricsText { width:min(100%,780px); margin:0 auto; padding:clamp(3rem,7vw,6rem) 0; border-top:1px solid #555; font-family:"Yu Mincho",serif; }
+.versionLyricsText > h3 { margin:0 0 4rem; font-size:clamp(2.5rem,6vw,5rem); font-weight:400; letter-spacing:-.06em; }
+.versionLyricsText section { margin-bottom:4rem; }
+.versionLyricsText h4 { margin:0 0 1.5rem; font-family:"Yu Gothic",sans-serif; font-size:.75rem; letter-spacing:.14em; }
+.versionLyricsText p { margin:0 0 2rem; font-size:clamp(1.05rem,1.6vw,1.25rem); line-height:1.9; }
+.versionLyricsText p span { display:block; }
+
 .gameTeaser { overflow:hidden; }
 .gameTeaserBody { display:grid; grid-template-columns:.72fr 1.28fr; gap:6vw; align-items:center; padding-top:5rem; }
 .gameTeaserCopy h2 { margin:.25rem 0 2rem; font-family:"Yu Mincho",serif; font-size:clamp(3.4rem,7vw,7.4rem); font-weight:400; line-height:.94; letter-spacing:-.08em; }
@@ -168,7 +216,7 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .hero h1 { width:fit-content; padding:.12em .14em .16em; background:rgba(255,255,255,.88); box-shadow:0 0 0 1px rgba(0,0,0,.08); font-size:clamp(3.15rem,15vw,5.2rem); }
   .heroLogoWrap { width:48vw; bottom:7vw; }
   .scrollHint { display:none; }
-  .storyBody,.record,.gameTeaserBody,.newTrack { grid-template-columns:1fr; }
+  .storyBody,.record,.gameTeaserBody,.newTrack,.versionTeaserBody { grid-template-columns:1fr; }
   .storyText h2 { margin-top:2rem; }
   .filmHeading { display:block; }
   .filmHeading p { text-align:left; }
@@ -177,6 +225,19 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .record { gap:4rem; }
   .newTrackArt { max-width:520px; }
   .gameTeaserBody { gap:3.5rem; }
+  .versionTeaserBody { gap:4rem; }
+  .versionFive { aspect-ratio:1.25; box-shadow:8px 8px 0 #000; }
+  .versionHero { min-height:auto; padding-top:8rem; }
+  .versionHero::after { width:75vw; bottom:-22vw; }
+  .versionHeroSub { margin-left:0; }
+  .versionIntro { margin-top:4rem; }
+  .versionHeroIndex { display:none; }
+  .versionCompareHeading { display:block; }
+  .versionCompareHeading h2 { margin-top:3rem; }
+  .versionTrack { grid-template-columns:1fr; min-height:0; }
+  .versionTrackNumber { min-height:130px; justify-content:flex-start; padding:.2rem 1rem; border-right:0; border-bottom:1px solid currentColor; font-size:7rem; }
+  .versionTrackMain { padding:2rem 1.2rem 2.5rem; }
+  .versionTrack audio { min-height:54px; }
   .recordArt { max-width:520px; }
   footer { align-items:start; flex-direction:column; }
   footer div { text-align:left; }

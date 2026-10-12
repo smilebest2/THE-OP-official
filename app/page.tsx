@@ -448,6 +448,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="versionTeaser section" aria-labelledby="version-teaser-title">
+        <div className="sectionIndex">
+          <span>5×</span>
+          <p>SPECIAL / ONE LYRIC, FIVE ARRANGEMENTS</p>
+        </div>
+        <div className="versionTeaserBody">
+          <div className="versionTeaserCopy">
+            <p className="eyebrow">LISTEN &amp; COMPARE</p>
+            <h2 id="version-teaser-title">オカマは両方</h2>
+            <p>同じ歌詞、5つの顔。<br />アレンジが変われば、曲はどこまで変わるのか。</p>
+            <a className="versionCta" href="/okama-versions/">5バージョンを聴き比べる <span aria-hidden="true">↗</span></a>
+          </div>
+          <div className="versionFive" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span></div>
+        </div>
+      </section>
+
       <section className="gameTeaser section darkSection" id="game" aria-labelledby="game-title">
         <div className="sectionIndex light">
           <span>04</span>
