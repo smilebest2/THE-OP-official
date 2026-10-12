@@ -52,6 +52,15 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .videoFrame { border:1px solid #555; padding:clamp(.4rem,1vw,.8rem); }
 .videoFrame video { display:block; width:100%; max-height:78vh; background:#000; }
 .videoFrame > p { display:flex; justify-content:space-between; margin:.8rem .3rem .2rem; font:700 .55rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.specialFilmHeading { display:flex; align-items:end; justify-content:space-between; gap:2rem; margin-top:clamp(6rem,12vw,11rem); padding:0 0 2.5rem; border-bottom:1px solid #555; }
+.specialFilmHeading h3 { margin:0; font-family:Arial Black,Impact,sans-serif; font-size:clamp(3rem,8vw,8rem); line-height:.83; letter-spacing:-.09em; }
+.specialFilmHeading > p { margin:0 0 .4rem; text-align:right; font-family:"Yu Mincho",serif; font-size:clamp(.85rem,1.3vw,1.1rem); line-height:1.9; }
+.specialFilmFrame { margin-top:2.5rem; border-color:#8b24ff; box-shadow:0 0 0 1px rgba(255,0,204,.28),0 0 55px rgba(92,0,255,.22); }
+.portraitFilmFrame { width:min(100%,480px); margin:2.5rem auto 0; }
+.portraitFilmFrame video { aspect-ratio:9/16; max-height:none; }
+.portraitFilmFrame > p { gap:1rem; line-height:1.5; }
+.trackFilmLink { display:inline-block; margin-top:1rem; padding-bottom:.35rem; border-bottom:1px solid currentColor; font:700 .8rem/1.5 "Yu Gothic",sans-serif; }
+.trackFilmLink:hover,.trackFilmLink:focus-visible { opacity:.65; }
 
 .record { display:grid; grid-template-columns:minmax(280px,1fr) 1.2fr; gap:8vw; align-items:center; padding-top:5rem; }
 .recordArt { aspect-ratio:1; padding:2rem; display:flex; flex-direction:column; justify-content:space-between; color:#fff; background:#000; font-family:Arial,sans-serif; letter-spacing:.15em; }
@@ -63,6 +72,38 @@ nav span { font-weight:400; opacity:.6; font-size:.55rem; }
 .credits { font:700 .68rem/1 Arial,sans-serif; letter-spacing:.2em; }
 .trackInfo audio { width:100%; margin:3rem 0 1rem; filter:grayscale(1) contrast(1.2); }
 .note { color:#666; font-family:"Yu Mincho",serif; font-size:.85rem; }
+.newTrack { margin-top:5rem; display:grid; grid-template-columns:minmax(280px,1fr) 1.2fr; gap:8vw; align-items:center; padding:5rem 0 3rem; border-top:2px solid #000; border-bottom:1px solid #000; }
+.newTrackArt { width:100%; aspect-ratio:1; object-fit:cover; background:#000; }
+.newTrackNumber { display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem; font:700 .6rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.newTrackNumber b { width:fit-content; padding:.5rem .65rem; color:#fff; background:#000; }
+.newTrackMain h3 { margin:.2rem 0 1rem; font-family:"Yu Mincho",serif; font-size:clamp(3rem,6vw,6rem); font-weight:400; line-height:1; letter-spacing:-.07em; }
+.newTrackMain audio { width:100%; margin:2.5rem 0 1rem; filter:grayscale(1) contrast(1.2); }
+.alternateTake { margin-top:2.5rem; padding:1.5rem 0 0; border-top:1px solid #888; }
+.alternateTakeLabel { display:flex; justify-content:space-between; align-items:center; font:700 .6rem/1 Arial,sans-serif; letter-spacing:.18em; }
+.alternateTakeLabel b { padding:.45rem .6rem; color:#fff; background:#000; }
+.alternateTake h4 { margin:1rem 0 .8rem; font-family:"Yu Mincho",serif; font-size:clamp(1.6rem,3vw,2.6rem); font-weight:400; line-height:1.25; }
+.alternateTake audio { margin-top:1.5rem; }
+.lyricsDisclosure { margin-top:2rem; border-top:1px solid #000; border-bottom:1px solid #000; }
+.lyricsDisclosure summary { position:relative; padding:1.15rem 2.5rem 1.15rem 0; cursor:pointer; list-style:none; font:700 .72rem/1.4 "Yu Gothic",sans-serif; letter-spacing:.16em; }
+.lyricsDisclosure summary::-webkit-details-marker { display:none; }
+.lyricsDisclosure summary::after { content:'＋'; position:absolute; top:50%; right:.25rem; transform:translateY(-50%); font-size:1.25rem; font-weight:400; }
+.lyricsDisclosure[open] summary::after { content:'−'; }
+.lyricsDisclosure summary:focus-visible { outline:3px solid currentColor; outline-offset:4px; }
+.lyricsText { padding:1rem 0 2rem; border-top:1px solid #aaa; font-family:"Yu Mincho",serif; font-size:clamp(.95rem,1.25vw,1.08rem); line-height:1.9; }
+.lyricsText h4 { margin:1.5rem 0 1rem; font-family:"Yu Gothic",sans-serif; font-size:.75rem; letter-spacing:.14em; }
+.lyricsText p { margin:0 0 1.7rem; }
+.lyricsText .lyricsChorus { padding-left:1rem; border-left:3px solid #000; }
+
+.gameTeaser { overflow:hidden; }
+.gameTeaserBody { display:grid; grid-template-columns:.72fr 1.28fr; gap:6vw; align-items:center; padding-top:5rem; }
+.gameTeaserCopy h2 { margin:.25rem 0 2rem; font-family:"Yu Mincho",serif; font-size:clamp(3.4rem,7vw,7.4rem); font-weight:400; line-height:.94; letter-spacing:-.08em; }
+.gameTeaserCopy > p:not(.eyebrow) { max-width:34rem; margin:0 0 2.2rem; font-family:"Yu Mincho",serif; font-size:clamp(.95rem,1.35vw,1.15rem); line-height:2; }
+.gameCta { display:inline-flex; justify-content:space-between; align-items:center; width:min(100%,310px); padding:1.15rem 1.3rem; color:#000; background:#fff; border:1px solid #fff; font-size:.72rem; font-weight:700; letter-spacing:.12em; transition:.25s; }
+.gameCta:hover,.gameCta:focus-visible { color:#fff; background:#050505; }
+.gameVisual { position:relative; aspect-ratio:16/9; overflow:hidden; display:flex; justify-content:space-between; align-items:end; padding:1.2rem; background-image:linear-gradient(90deg,rgba(255,61,0,.18),rgba(0,0,0,.1) 48%,rgba(23,66,211,.18)),url('/game/assets/crowd-battle-v2.webp'); background-size:cover; background-position:center; border:1px solid #555; font:700 .55rem/1 Arial,sans-serif; letter-spacing:.18em; transition:filter .25s,transform .25s; }
+.gameVisual::after { content:'GAME風'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-4deg); padding:.18em .3em; color:#050505; background:#fff; font-family:Arial Black,"Yu Gothic",sans-serif; font-size:clamp(2.3rem,6vw,6.5rem); letter-spacing:-.08em; white-space:nowrap; box-shadow:8px 8px 0 #050505; }
+.gameVisual b { position:absolute; left:50%; bottom:1.2rem; transform:translateX(-50%); }
+.gameVisual:hover { filter:contrast(1.12) saturate(1.2); transform:scale(1.01); }
 
 .manifesto { padding:clamp(6rem,13vw,12rem) 4vw; border-top:2px solid #000; background:#fff; }
 .manifesto p { margin:0; padding:.25em 1vw; font-family:"Yu Mincho",serif; font-size:clamp(2.2rem,6vw,6rem); line-height:1.2; letter-spacing:-.06em; border-bottom:1px solid #000; }
@@ -82,14 +123,18 @@ a:focus-visible, video:focus-visible, audio:focus-visible { outline:3px solid cu
   .heroTopline { top:78px; }
   .heroPortrait { object-position:64% center; opacity:.74; }
   .heroCopy { top:25%; right:5vw; }
-  .hero h1 { font-size:clamp(3.15rem,15vw,5.2rem); }
+  .hero h1 { width:fit-content; padding:.12em .14em .16em; background:rgba(255,255,255,.88); box-shadow:0 0 0 1px rgba(0,0,0,.08); font-size:clamp(3.15rem,15vw,5.2rem); }
   .heroLogoWrap { width:48vw; bottom:7vw; }
   .scrollHint { display:none; }
-  .storyBody,.record { grid-template-columns:1fr; }
+  .storyBody,.record,.gameTeaserBody,.newTrack { grid-template-columns:1fr; }
   .storyText h2 { margin-top:2rem; }
   .filmHeading { display:block; }
   .filmHeading p { text-align:left; }
+  .specialFilmHeading { display:block; }
+  .specialFilmHeading > p { margin-top:1.8rem; text-align:left; }
   .record { gap:4rem; }
+  .newTrackArt { max-width:520px; }
+  .gameTeaserBody { gap:3.5rem; }
   .recordArt { max-width:520px; }
   footer { align-items:start; flex-direction:column; }
   footer div { text-align:left; }
