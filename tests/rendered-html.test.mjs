@@ -22,6 +22,8 @@ test("keeps the existing homepage and adds the making-journal navigation", async
   assert.match(html, /id="music"/);
   assert.match(html, /id="game"/);
   assert.match(html, /href="\/okama-versions\/"/);
+  assert.match(html, /お疲れ様です。— 取りなおし版/);
+  assert.match(html, /\/otsukaresama-retake\.mp3/);
 });
 
 test("renders all five comparison tracks and the approved common lyrics", async () => {
@@ -74,6 +76,7 @@ test("generates matching GitHub Pages files", async () => {
   assert.match(article, /<meta name="viewport" content="width=device-width,initial-scale=1">/);
   assert.match(article, /datetime="2026-10-12"/);
   assert.match(home, /href="okama-versions\/"/);
+  assert.match(home, /otsukaresama-retake\.mp3/);
   assert.equal((special.match(/<audio/g) ?? []).length, 5);
   assert.match(special, /document\.addEventListener\("play"/);
   assert.ok(audioStats.every((audio) => audio.size > 4_000_000));

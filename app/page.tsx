@@ -386,6 +386,16 @@ export default function Home() {
               お使いのブラウザは音声再生に対応していません。
             </audio>
             <p className="note">Remastered / 4:02</p>
+            <div className="alternateTake">
+              <div className="alternateTakeLabel"><span>RETAKE</span><b>NEW</b></div>
+              <h4>お疲れ様です。— 取りなおし版</h4>
+              <p className="credits">NEW VOCAL TAKE / THE O.P</p>
+              <audio controls preload="metadata">
+                <source src="/otsukaresama-retake.mp3" type="audio/mpeg" />
+                お使いのブラウザは音声再生に対応していません。
+              </audio>
+              <p className="note">取りなおし版 / 4:02</p>
+            </div>
             <details className="lyricsDisclosure">
               <summary>歌詞を見る</summary>
               <div className="lyricsText">
